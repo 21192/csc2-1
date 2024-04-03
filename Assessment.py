@@ -2,7 +2,7 @@ def History():
     print(Area, Perimeter)
 
 
-
+π = 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
 
     
 History_list = []
@@ -20,7 +20,7 @@ while True:
                 TBase = int(input("Base: "))
                 print(THeight * TBase /2) 
                 break
-            
+
             elif AShape == "B" or AShape == "b":
                 SSize = int(input("Square Size: "))
                 print(SSize * SSize)
@@ -32,7 +32,7 @@ while True:
                 break
             elif AShape == "D" or AShape == "d":
                 CRadius = int(input("Radius: "))
-                print(CRadius^2 * "π" )
+                print(CRadius^2 * π )
                 break
         
         elif AandP == "B" or AandP == "b":        
@@ -54,7 +54,7 @@ while True:
                 break
             elif PShape == "D" or PShape == "d":
                 C1 = int(input("Radius: "))
-                print(2 * "π" * C1)
+                print(2 * π * C1)
                 break
     except ValueError:
         print("**Error**")
