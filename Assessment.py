@@ -3,6 +3,8 @@ def History():
 
 
 
+
+    
 History_list = []
 Equations = 0
 
@@ -18,14 +20,19 @@ while True:
                 TBase = int(input("Base: "))
                 print(THeight * TBase /2) 
                 break
+            
             elif AShape == "B" or AShape == "b":
-                print("B")
+                SSize = int(input("Square Size: "))
+                print(SSize * SSize)
                 break
             elif AShape == "C" or AShape == "c":
-                print("C")
+                RLength = int(input("Length: "))
+                RWidth = int(input("Width: "))
+                print(RLength * RWidth)
                 break
             elif AShape == "D" or AShape == "d":
-                print("D") 
+                CRadius = int(input("Radius: "))
+                print(CRadius^2 * "π" )
                 break
         
         elif AandP == "B" or AandP == "b":        
@@ -37,13 +44,17 @@ while True:
                 print(T1 + T2 + T3)
                 break
             elif PShape == "B" or PShape == "b":
-                print("B")
+                SPeri = int(input("Square Size: "))
+                print(SPeri * 4)
                 break
             elif PShape == "C" or PShape == "c":
-                print("C")
+                R1 = int(input("Length: "))
+                R2 = int(input("Width: "))
+                print(R1 + R1 + R2 + R2)
                 break
             elif PShape == "D" or PShape == "d":
-                print("D")
+                C1 = int(input("Radius: "))
+                print(2 * "π" * C1)
                 break
     except ValueError:
         print("**Error**")
